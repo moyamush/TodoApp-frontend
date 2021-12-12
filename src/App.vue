@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <h1>test</h1>
     <NavbarComponent />
     <br><br>
     <!-- router-viewでrouter/index.jsに書かれているcomponentを表示できるようにする -->

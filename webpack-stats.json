@@ -1,26 +1,39 @@
 {
   "status": "done",
   "assets": {
+    "css/index.e2103e50.css": {
+      "name": "css/index.e2103e50.css",
+      "path": "/Users/sotakato/Desktop/TodoApp-frontend/dist/css/index.e2103e50.css",
+      "publicPath": "/dist/css/index.e2103e50.css"
+    },
     "bundle.js": {
       "name": "bundle.js",
-      "path": "/dist/bundle.js",
-      "publicPath": "http://0.0.0.0:8080/bundle.js"
+      "path": "/Users/sotakato/Desktop/TodoApp-frontend/dist/bundle.js",
+      "publicPath": "/dist/bundle.js"
+    },
+    "bundle.js.map": {
+      "name": "bundle.js.map",
+      "path": "/Users/sotakato/Desktop/TodoApp-frontend/dist/bundle.js.map",
+      "publicPath": "/dist/bundle.js.map"
     },
     "index.html": {
       "name": "index.html",
-      "path": "/dist/index.html",
-      "publicPath": "http://0.0.0.0:8080/index.html"
+      "path": "/Users/sotakato/Desktop/TodoApp-frontend/dist/index.html",
+      "publicPath": "/dist/index.html"
     },
     "favicon.ico": {
       "name": "favicon.ico",
-      "path": "/dist/favicon.ico",
-      "publicPath": "http://0.0.0.0:8080/favicon.ico"
+      "path": "/Users/sotakato/Desktop/TodoApp-frontend/dist/favicon.ico",
+      "publicPath": "/dist/favicon.ico"
     }
   },
   "chunks": {
-    "app": [
-      "bundle.js"
+    "index": [
+      "css/index.e2103e50.css",
+      "bundle.js",
+      "css/index.e2103e50.css.map",
+      "bundle.js.map"
     ]
   },
-  "publicPath": "http://0.0.0.0:8080/"
+  "publicPath": "/dist/"
 }
