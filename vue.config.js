@@ -7,7 +7,7 @@ module.exports = {
     pages: {
         index: {
           // エントリーポイント
-          entry: 'src/main.js',
+          entry: 'main.js',
         },
     },
     chainWebpack: config => {
