@@ -7,7 +7,7 @@ module.exports = {
     outputDir: './dist/',
     pages: {
       index: {
-        entry: 'src/main.js',
+        entry: 'srcc/main.js',
         title: 'QuestionTime',
       },
     },
