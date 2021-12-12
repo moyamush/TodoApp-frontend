@@ -1,10 +1,20 @@
 {
   "status": "done",
   "assets": {
+    "css/app.e2103e50.css": {
+      "name": "css/app.e2103e50.css",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/css/app.e2103e50.css",
+      "publicPath": "http://0.0.0.0:8080/css/app.e2103e50.css"
+    },
     "bundle.js": {
       "name": "bundle.js",
       "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/bundle.js",
       "publicPath": "http://0.0.0.0:8080/bundle.js"
+    },
+    "bundle.js.map": {
+      "name": "bundle.js.map",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/bundle.js.map",
+      "publicPath": "http://0.0.0.0:8080/bundle.js.map"
     },
     "index.html": {
       "name": "index.html",
@@ -19,7 +29,10 @@
   },
   "chunks": {
     "app": [
-      "bundle.js"
+      "css/app.e2103e50.css",
+      "bundle.js",
+      "css/app.e2103e50.css.map",
+      "bundle.js.map"
     ]
   },
   "publicPath": "http://0.0.0.0:8080/"
