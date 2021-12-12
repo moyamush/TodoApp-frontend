@@ -1,10 +1,10 @@
 {
   "status": "done",
   "assets": {
-    "css/app.e2103e50.css": {
-      "name": "css/app.e2103e50.css",
-      "path": "dist/css/app.e2103e50.css",
-      "publicPath": "http://0.0.0.0:8080/css/app.e2103e50.css"
+    "bundle.css": {
+      "name": "bundle.css",
+      "path": "/dist/bundle.css",
+      "publicPath": "http://0.0.0.0:8080/bundle.css"
     },
     "bundle.js": {
       "name": "bundle.js",
@@ -29,9 +29,9 @@
   },
   "chunks": {
     "app": [
-      "css/app.e2103e50.css",
+      "bundle.css",
       "bundle.js",
-      "css/app.e2103e50.css.map",
+      "bundle.css.map",
       "bundle.js.map"
     ]
   },
