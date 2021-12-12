@@ -1,10 +1,23 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div id="app">
+    <NavbarComponent />
+    <br><br>
+    <!-- router-viewでrouter/index.jsに書かれているcomponentを表示できるようにする -->
+    <router-view />
   </div>
-  <router-view/>
 </template>
+
+<script>
+import NavbarComponent from "./components/Molecules/Navbar.vue"
+import { axios } from "@/common/api.service.js";
+
+export default {
+    name: "App",
+    components: {
+        NavbarComponent
+    }
+}
+</script>
 
 <style>
 #app {

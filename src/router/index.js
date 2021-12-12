@@ -1,24 +1,54 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/Home.vue'
+import TaskBoard from '../components/Templates/TaskBoard.vue'
+import About from '../views/About.vue'
+import MyPage from '../views/MyPage.vue'
+import CreateTask from '../components/Molecules/CreateTask.vue'
+import CreateGroup from '../views/CreateGroup.vue'
+import SearchGroup from '../components/Templates/SearchGroup.vue'
+import EditTask from '../components/Molecules/EditTask.vue'
+
 
 const routes = [
   {
+    // path名 = router-link :to=path名
     path: '/',
-    name: 'Home',
-    component: Home
+    name: 'TaskBoard',
+    component: TaskBoard
   },
   {
     path: '/about',
     name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    component: About
+  },
+  {
+    path: '/createTask',
+    name: 'Task',
+    component: CreateTask
+  },
+  {
+    path: '/editTask',
+    name: 'EditTask',
+    component: EditTask
+  },
+  {
+    path: '/createGroup',
+    name: 'CreateGroup',
+    component: CreateGroup
+  },
+  {
+    path: '/searchGroup',
+    name: 'SearchGroup',
+    component: SearchGroup
+  },
+  {
+    path: '/mypage',
+    name: 'MyPage',
+    component: MyPage
   }
 ]
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+  history: createWebHistory(/* process.env.BASE_URL */),
   routes
 })
 

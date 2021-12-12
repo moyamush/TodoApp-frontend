@@ -1,18 +1,24 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>{{ this.$store.state.currentGroupID }}</h1>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import { axios } from "@/common/api.service.js";
 
 export default {
-  name: 'Home',
-  components: {
-    HelloWorld
-  }
+    name: 'Home',
+    computed: {
+      now() {
+        return Date.now()
+      }
+    },
+    methods: {
+      date() {
+        return Date.now()
+      }
+    }
 }
 </script>

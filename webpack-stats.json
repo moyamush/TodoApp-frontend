@@ -1,0 +1,484 @@
+{
+  "status": "done",
+  "assets": {
+    "bundle.js": {
+      "name": "bundle.js",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/bundle.js",
+      "publicPath": "http://0.0.0.0:8080/bundle.js"
+    },
+    "index.html": {
+      "name": "index.html",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/index.html",
+      "publicPath": "http://0.0.0.0:8080/index.html"
+    },
+    "favicon.ico": {
+      "name": "favicon.ico",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/favicon.ico",
+      "publicPath": "http://0.0.0.0:8080/favicon.ico"
+    },
+    "app.7cca5af637f48144d005.hot-update.js": {
+      "name": "app.7cca5af637f48144d005.hot-update.js",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/app.7cca5af637f48144d005.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.7cca5af637f48144d005.hot-update.js"
+    },
+    "7cca5af637f48144d005.hot-update.json": {
+      "name": "7cca5af637f48144d005.hot-update.json",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/7cca5af637f48144d005.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/7cca5af637f48144d005.hot-update.json"
+    },
+    "6b2fc8c6f425ae2e7237.hot-update.json": {
+      "name": "6b2fc8c6f425ae2e7237.hot-update.json",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/6b2fc8c6f425ae2e7237.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/6b2fc8c6f425ae2e7237.hot-update.json"
+    },
+    "app.b0c2531c0cd1deb7f351.hot-update.js": {
+      "name": "app.b0c2531c0cd1deb7f351.hot-update.js",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/app.b0c2531c0cd1deb7f351.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.b0c2531c0cd1deb7f351.hot-update.js"
+    },
+    "b0c2531c0cd1deb7f351.hot-update.json": {
+      "name": "b0c2531c0cd1deb7f351.hot-update.json",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/b0c2531c0cd1deb7f351.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/b0c2531c0cd1deb7f351.hot-update.json"
+    },
+    "app.e1a264088de96b197535.hot-update.js": {
+      "name": "app.e1a264088de96b197535.hot-update.js",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/app.e1a264088de96b197535.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.e1a264088de96b197535.hot-update.js"
+    },
+    "e1a264088de96b197535.hot-update.json": {
+      "name": "e1a264088de96b197535.hot-update.json",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/e1a264088de96b197535.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/e1a264088de96b197535.hot-update.json"
+    },
+    "app.2a6e3b2cbec6c37e88f9.hot-update.js": {
+      "name": "app.2a6e3b2cbec6c37e88f9.hot-update.js",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/app.2a6e3b2cbec6c37e88f9.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.2a6e3b2cbec6c37e88f9.hot-update.js"
+    },
+    "2a6e3b2cbec6c37e88f9.hot-update.json": {
+      "name": "2a6e3b2cbec6c37e88f9.hot-update.json",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/2a6e3b2cbec6c37e88f9.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/2a6e3b2cbec6c37e88f9.hot-update.json"
+    },
+    "app.040e818764bf8770e32e.hot-update.js": {
+      "name": "app.040e818764bf8770e32e.hot-update.js",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/app.040e818764bf8770e32e.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.040e818764bf8770e32e.hot-update.js"
+    },
+    "040e818764bf8770e32e.hot-update.json": {
+      "name": "040e818764bf8770e32e.hot-update.json",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/040e818764bf8770e32e.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/040e818764bf8770e32e.hot-update.json"
+    },
+    "app.01f686f87e1f9d7231f2.hot-update.js": {
+      "name": "app.01f686f87e1f9d7231f2.hot-update.js",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/app.01f686f87e1f9d7231f2.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.01f686f87e1f9d7231f2.hot-update.js"
+    },
+    "01f686f87e1f9d7231f2.hot-update.json": {
+      "name": "01f686f87e1f9d7231f2.hot-update.json",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/01f686f87e1f9d7231f2.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/01f686f87e1f9d7231f2.hot-update.json"
+    },
+    "app.1a414fb3fc0cca652d28.hot-update.js": {
+      "name": "app.1a414fb3fc0cca652d28.hot-update.js",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/app.1a414fb3fc0cca652d28.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.1a414fb3fc0cca652d28.hot-update.js"
+    },
+    "1a414fb3fc0cca652d28.hot-update.json": {
+      "name": "1a414fb3fc0cca652d28.hot-update.json",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/1a414fb3fc0cca652d28.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/1a414fb3fc0cca652d28.hot-update.json"
+    },
+    "app.fe0c2971df60bb6da491.hot-update.js": {
+      "name": "app.fe0c2971df60bb6da491.hot-update.js",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/app.fe0c2971df60bb6da491.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.fe0c2971df60bb6da491.hot-update.js"
+    },
+    "fe0c2971df60bb6da491.hot-update.json": {
+      "name": "fe0c2971df60bb6da491.hot-update.json",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/fe0c2971df60bb6da491.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/fe0c2971df60bb6da491.hot-update.json"
+    },
+    "app.e61bce4418b8e29311b8.hot-update.js": {
+      "name": "app.e61bce4418b8e29311b8.hot-update.js",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/app.e61bce4418b8e29311b8.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.e61bce4418b8e29311b8.hot-update.js"
+    },
+    "e61bce4418b8e29311b8.hot-update.json": {
+      "name": "e61bce4418b8e29311b8.hot-update.json",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/e61bce4418b8e29311b8.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/e61bce4418b8e29311b8.hot-update.json"
+    },
+    "app.2a1bedd433735d8dbcad.hot-update.js": {
+      "name": "app.2a1bedd433735d8dbcad.hot-update.js",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/app.2a1bedd433735d8dbcad.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.2a1bedd433735d8dbcad.hot-update.js"
+    },
+    "2a1bedd433735d8dbcad.hot-update.json": {
+      "name": "2a1bedd433735d8dbcad.hot-update.json",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/2a1bedd433735d8dbcad.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/2a1bedd433735d8dbcad.hot-update.json"
+    },
+    "app.9d2bbca57c1d822ea0cb.hot-update.js": {
+      "name": "app.9d2bbca57c1d822ea0cb.hot-update.js",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/app.9d2bbca57c1d822ea0cb.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.9d2bbca57c1d822ea0cb.hot-update.js"
+    },
+    "9d2bbca57c1d822ea0cb.hot-update.json": {
+      "name": "9d2bbca57c1d822ea0cb.hot-update.json",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/9d2bbca57c1d822ea0cb.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/9d2bbca57c1d822ea0cb.hot-update.json"
+    },
+    "app.9615dce02fe03ea43258.hot-update.js": {
+      "name": "app.9615dce02fe03ea43258.hot-update.js",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/app.9615dce02fe03ea43258.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.9615dce02fe03ea43258.hot-update.js"
+    },
+    "9615dce02fe03ea43258.hot-update.json": {
+      "name": "9615dce02fe03ea43258.hot-update.json",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/9615dce02fe03ea43258.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/9615dce02fe03ea43258.hot-update.json"
+    },
+    "app.659ed820e43041f850ad.hot-update.js": {
+      "name": "app.659ed820e43041f850ad.hot-update.js",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/app.659ed820e43041f850ad.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.659ed820e43041f850ad.hot-update.js"
+    },
+    "659ed820e43041f850ad.hot-update.json": {
+      "name": "659ed820e43041f850ad.hot-update.json",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/659ed820e43041f850ad.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/659ed820e43041f850ad.hot-update.json"
+    },
+    "app.751781d9b2511261f91a.hot-update.js": {
+      "name": "app.751781d9b2511261f91a.hot-update.js",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/app.751781d9b2511261f91a.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.751781d9b2511261f91a.hot-update.js"
+    },
+    "751781d9b2511261f91a.hot-update.json": {
+      "name": "751781d9b2511261f91a.hot-update.json",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/751781d9b2511261f91a.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/751781d9b2511261f91a.hot-update.json"
+    },
+    "app.50ab09c80dac68b2593d.hot-update.js": {
+      "name": "app.50ab09c80dac68b2593d.hot-update.js",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/app.50ab09c80dac68b2593d.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.50ab09c80dac68b2593d.hot-update.js"
+    },
+    "50ab09c80dac68b2593d.hot-update.json": {
+      "name": "50ab09c80dac68b2593d.hot-update.json",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/50ab09c80dac68b2593d.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/50ab09c80dac68b2593d.hot-update.json"
+    },
+    "app.8bcd5d4d857ae8f52fc5.hot-update.js": {
+      "name": "app.8bcd5d4d857ae8f52fc5.hot-update.js",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/app.8bcd5d4d857ae8f52fc5.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.8bcd5d4d857ae8f52fc5.hot-update.js"
+    },
+    "8bcd5d4d857ae8f52fc5.hot-update.json": {
+      "name": "8bcd5d4d857ae8f52fc5.hot-update.json",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/8bcd5d4d857ae8f52fc5.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/8bcd5d4d857ae8f52fc5.hot-update.json"
+    },
+    "app.251bfdbc4176a3aabbf9.hot-update.js": {
+      "name": "app.251bfdbc4176a3aabbf9.hot-update.js",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/app.251bfdbc4176a3aabbf9.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.251bfdbc4176a3aabbf9.hot-update.js"
+    },
+    "251bfdbc4176a3aabbf9.hot-update.json": {
+      "name": "251bfdbc4176a3aabbf9.hot-update.json",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/251bfdbc4176a3aabbf9.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/251bfdbc4176a3aabbf9.hot-update.json"
+    },
+    "app.4c89ebe3c51f05305f8d.hot-update.js": {
+      "name": "app.4c89ebe3c51f05305f8d.hot-update.js",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/app.4c89ebe3c51f05305f8d.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.4c89ebe3c51f05305f8d.hot-update.js"
+    },
+    "4c89ebe3c51f05305f8d.hot-update.json": {
+      "name": "4c89ebe3c51f05305f8d.hot-update.json",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/4c89ebe3c51f05305f8d.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/4c89ebe3c51f05305f8d.hot-update.json"
+    },
+    "app.af8e65b49633b522d3a8.hot-update.js": {
+      "name": "app.af8e65b49633b522d3a8.hot-update.js",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/app.af8e65b49633b522d3a8.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.af8e65b49633b522d3a8.hot-update.js"
+    },
+    "af8e65b49633b522d3a8.hot-update.json": {
+      "name": "af8e65b49633b522d3a8.hot-update.json",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/af8e65b49633b522d3a8.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/af8e65b49633b522d3a8.hot-update.json"
+    },
+    "app.f370f0e8dea4b087b841.hot-update.js": {
+      "name": "app.f370f0e8dea4b087b841.hot-update.js",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/app.f370f0e8dea4b087b841.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.f370f0e8dea4b087b841.hot-update.js"
+    },
+    "f370f0e8dea4b087b841.hot-update.json": {
+      "name": "f370f0e8dea4b087b841.hot-update.json",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/f370f0e8dea4b087b841.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/f370f0e8dea4b087b841.hot-update.json"
+    },
+    "app.b05049b4f122ca38d68c.hot-update.js": {
+      "name": "app.b05049b4f122ca38d68c.hot-update.js",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/app.b05049b4f122ca38d68c.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.b05049b4f122ca38d68c.hot-update.js"
+    },
+    "b05049b4f122ca38d68c.hot-update.json": {
+      "name": "b05049b4f122ca38d68c.hot-update.json",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/b05049b4f122ca38d68c.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/b05049b4f122ca38d68c.hot-update.json"
+    },
+    "app.1c8966a9c53f9487e7a5.hot-update.js": {
+      "name": "app.1c8966a9c53f9487e7a5.hot-update.js",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/app.1c8966a9c53f9487e7a5.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.1c8966a9c53f9487e7a5.hot-update.js"
+    },
+    "1c8966a9c53f9487e7a5.hot-update.json": {
+      "name": "1c8966a9c53f9487e7a5.hot-update.json",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/1c8966a9c53f9487e7a5.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/1c8966a9c53f9487e7a5.hot-update.json"
+    },
+    "app.0bddd9714b3af0eb81d9.hot-update.js": {
+      "name": "app.0bddd9714b3af0eb81d9.hot-update.js",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/app.0bddd9714b3af0eb81d9.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.0bddd9714b3af0eb81d9.hot-update.js"
+    },
+    "0bddd9714b3af0eb81d9.hot-update.json": {
+      "name": "0bddd9714b3af0eb81d9.hot-update.json",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/0bddd9714b3af0eb81d9.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/0bddd9714b3af0eb81d9.hot-update.json"
+    },
+    "app.48330232173a4bce124a.hot-update.js": {
+      "name": "app.48330232173a4bce124a.hot-update.js",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/app.48330232173a4bce124a.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.48330232173a4bce124a.hot-update.js"
+    },
+    "48330232173a4bce124a.hot-update.json": {
+      "name": "48330232173a4bce124a.hot-update.json",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/48330232173a4bce124a.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/48330232173a4bce124a.hot-update.json"
+    },
+    "app.32d03f25d9e47213d1a5.hot-update.js": {
+      "name": "app.32d03f25d9e47213d1a5.hot-update.js",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/app.32d03f25d9e47213d1a5.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.32d03f25d9e47213d1a5.hot-update.js"
+    },
+    "32d03f25d9e47213d1a5.hot-update.json": {
+      "name": "32d03f25d9e47213d1a5.hot-update.json",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/32d03f25d9e47213d1a5.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/32d03f25d9e47213d1a5.hot-update.json"
+    },
+    "app.807c8d6e013aaeee8209.hot-update.js": {
+      "name": "app.807c8d6e013aaeee8209.hot-update.js",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/app.807c8d6e013aaeee8209.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.807c8d6e013aaeee8209.hot-update.js"
+    },
+    "807c8d6e013aaeee8209.hot-update.json": {
+      "name": "807c8d6e013aaeee8209.hot-update.json",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/807c8d6e013aaeee8209.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/807c8d6e013aaeee8209.hot-update.json"
+    },
+    "app.47218c771ce1443de1c3.hot-update.js": {
+      "name": "app.47218c771ce1443de1c3.hot-update.js",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/app.47218c771ce1443de1c3.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.47218c771ce1443de1c3.hot-update.js"
+    },
+    "47218c771ce1443de1c3.hot-update.json": {
+      "name": "47218c771ce1443de1c3.hot-update.json",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/47218c771ce1443de1c3.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/47218c771ce1443de1c3.hot-update.json"
+    },
+    "app.c66840ced4190ed0262b.hot-update.js": {
+      "name": "app.c66840ced4190ed0262b.hot-update.js",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/app.c66840ced4190ed0262b.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.c66840ced4190ed0262b.hot-update.js"
+    },
+    "c66840ced4190ed0262b.hot-update.json": {
+      "name": "c66840ced4190ed0262b.hot-update.json",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/c66840ced4190ed0262b.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/c66840ced4190ed0262b.hot-update.json"
+    },
+    "app.23151f5cdfaaff959c19.hot-update.js": {
+      "name": "app.23151f5cdfaaff959c19.hot-update.js",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/app.23151f5cdfaaff959c19.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.23151f5cdfaaff959c19.hot-update.js"
+    },
+    "23151f5cdfaaff959c19.hot-update.json": {
+      "name": "23151f5cdfaaff959c19.hot-update.json",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/23151f5cdfaaff959c19.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/23151f5cdfaaff959c19.hot-update.json"
+    },
+    "app.dda25268897908791eda.hot-update.js": {
+      "name": "app.dda25268897908791eda.hot-update.js",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/app.dda25268897908791eda.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.dda25268897908791eda.hot-update.js"
+    },
+    "dda25268897908791eda.hot-update.json": {
+      "name": "dda25268897908791eda.hot-update.json",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/dda25268897908791eda.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/dda25268897908791eda.hot-update.json"
+    },
+    "app.3fe0838222b4f9e29083.hot-update.js": {
+      "name": "app.3fe0838222b4f9e29083.hot-update.js",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/app.3fe0838222b4f9e29083.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.3fe0838222b4f9e29083.hot-update.js"
+    },
+    "3fe0838222b4f9e29083.hot-update.json": {
+      "name": "3fe0838222b4f9e29083.hot-update.json",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/3fe0838222b4f9e29083.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/3fe0838222b4f9e29083.hot-update.json"
+    },
+    "app.e1e020e8fe3838c15bf6.hot-update.js": {
+      "name": "app.e1e020e8fe3838c15bf6.hot-update.js",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/app.e1e020e8fe3838c15bf6.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.e1e020e8fe3838c15bf6.hot-update.js"
+    },
+    "e1e020e8fe3838c15bf6.hot-update.json": {
+      "name": "e1e020e8fe3838c15bf6.hot-update.json",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/e1e020e8fe3838c15bf6.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/e1e020e8fe3838c15bf6.hot-update.json"
+    },
+    "app.608e822a2e67d507c994.hot-update.js": {
+      "name": "app.608e822a2e67d507c994.hot-update.js",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/app.608e822a2e67d507c994.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.608e822a2e67d507c994.hot-update.js"
+    },
+    "608e822a2e67d507c994.hot-update.json": {
+      "name": "608e822a2e67d507c994.hot-update.json",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/608e822a2e67d507c994.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/608e822a2e67d507c994.hot-update.json"
+    },
+    "app.6807e9759f0c7f479831.hot-update.js": {
+      "name": "app.6807e9759f0c7f479831.hot-update.js",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/app.6807e9759f0c7f479831.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.6807e9759f0c7f479831.hot-update.js"
+    },
+    "6807e9759f0c7f479831.hot-update.json": {
+      "name": "6807e9759f0c7f479831.hot-update.json",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/6807e9759f0c7f479831.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/6807e9759f0c7f479831.hot-update.json"
+    },
+    "app.6961cbb7e0018ed399f4.hot-update.js": {
+      "name": "app.6961cbb7e0018ed399f4.hot-update.js",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/app.6961cbb7e0018ed399f4.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.6961cbb7e0018ed399f4.hot-update.js"
+    },
+    "6961cbb7e0018ed399f4.hot-update.json": {
+      "name": "6961cbb7e0018ed399f4.hot-update.json",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/6961cbb7e0018ed399f4.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/6961cbb7e0018ed399f4.hot-update.json"
+    },
+    "app.bfc94f303a679a99d367.hot-update.js": {
+      "name": "app.bfc94f303a679a99d367.hot-update.js",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/app.bfc94f303a679a99d367.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.bfc94f303a679a99d367.hot-update.js"
+    },
+    "bfc94f303a679a99d367.hot-update.json": {
+      "name": "bfc94f303a679a99d367.hot-update.json",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/bfc94f303a679a99d367.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/bfc94f303a679a99d367.hot-update.json"
+    },
+    "app.394392e7ce2e1b10c666.hot-update.js": {
+      "name": "app.394392e7ce2e1b10c666.hot-update.js",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/app.394392e7ce2e1b10c666.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.394392e7ce2e1b10c666.hot-update.js"
+    },
+    "394392e7ce2e1b10c666.hot-update.json": {
+      "name": "394392e7ce2e1b10c666.hot-update.json",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/394392e7ce2e1b10c666.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/394392e7ce2e1b10c666.hot-update.json"
+    },
+    "app.edc604c9b2de505fc616.hot-update.js": {
+      "name": "app.edc604c9b2de505fc616.hot-update.js",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/app.edc604c9b2de505fc616.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.edc604c9b2de505fc616.hot-update.js"
+    },
+    "edc604c9b2de505fc616.hot-update.json": {
+      "name": "edc604c9b2de505fc616.hot-update.json",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/edc604c9b2de505fc616.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/edc604c9b2de505fc616.hot-update.json"
+    },
+    "app.8963b49b947e2f4b514b.hot-update.js": {
+      "name": "app.8963b49b947e2f4b514b.hot-update.js",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/app.8963b49b947e2f4b514b.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.8963b49b947e2f4b514b.hot-update.js"
+    },
+    "8963b49b947e2f4b514b.hot-update.json": {
+      "name": "8963b49b947e2f4b514b.hot-update.json",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/8963b49b947e2f4b514b.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/8963b49b947e2f4b514b.hot-update.json"
+    },
+    "app.92b38630878320cf9204.hot-update.js": {
+      "name": "app.92b38630878320cf9204.hot-update.js",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/app.92b38630878320cf9204.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.92b38630878320cf9204.hot-update.js"
+    },
+    "92b38630878320cf9204.hot-update.json": {
+      "name": "92b38630878320cf9204.hot-update.json",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/92b38630878320cf9204.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/92b38630878320cf9204.hot-update.json"
+    },
+    "app.cf9a3aa007531556a767.hot-update.js": {
+      "name": "app.cf9a3aa007531556a767.hot-update.js",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/app.cf9a3aa007531556a767.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.cf9a3aa007531556a767.hot-update.js"
+    },
+    "cf9a3aa007531556a767.hot-update.json": {
+      "name": "cf9a3aa007531556a767.hot-update.json",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/cf9a3aa007531556a767.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/cf9a3aa007531556a767.hot-update.json"
+    },
+    "928ab956ca589ac847ea.hot-update.json": {
+      "name": "928ab956ca589ac847ea.hot-update.json",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/928ab956ca589ac847ea.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/928ab956ca589ac847ea.hot-update.json"
+    },
+    "app.117b1b94c3227795a789.hot-update.js": {
+      "name": "app.117b1b94c3227795a789.hot-update.js",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/app.117b1b94c3227795a789.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.117b1b94c3227795a789.hot-update.js"
+    },
+    "117b1b94c3227795a789.hot-update.json": {
+      "name": "117b1b94c3227795a789.hot-update.json",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/117b1b94c3227795a789.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/117b1b94c3227795a789.hot-update.json"
+    },
+    "app.6d8ae22281386fb0f288.hot-update.js": {
+      "name": "app.6d8ae22281386fb0f288.hot-update.js",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/app.6d8ae22281386fb0f288.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.6d8ae22281386fb0f288.hot-update.js"
+    },
+    "6d8ae22281386fb0f288.hot-update.json": {
+      "name": "6d8ae22281386fb0f288.hot-update.json",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/6d8ae22281386fb0f288.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/6d8ae22281386fb0f288.hot-update.json"
+    },
+    "02650c2281470bca3ef2.hot-update.json": {
+      "name": "02650c2281470bca3ef2.hot-update.json",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/02650c2281470bca3ef2.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/02650c2281470bca3ef2.hot-update.json"
+    },
+    "app.42092a606ee417fb174e.hot-update.js": {
+      "name": "app.42092a606ee417fb174e.hot-update.js",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/app.42092a606ee417fb174e.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.42092a606ee417fb174e.hot-update.js"
+    },
+    "42092a606ee417fb174e.hot-update.json": {
+      "name": "42092a606ee417fb174e.hot-update.json",
+      "path": "/Users/sotakato/Desktop/TodoApp/TodoApp/frontend/dist/42092a606ee417fb174e.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/42092a606ee417fb174e.hot-update.json"
+    }
+  },
+  "chunks": {
+    "app": [
+      "bundle.js",
+      "app.42092a606ee417fb174e.hot-update.js"
+    ]
+  },
+  "publicPath": "http://0.0.0.0:8080/",
+  "error": "ModuleError",
+  "message": "Module Error (from ./node_modules/vue-loader-v16/dist/templateLoader.js):\n\nVueCompilerError: Error parsing JavaScript expression: Unexpected token (1:25)\nat /Users/sotakato/Desktop/TodoApp/TodoApp/frontend/src/components/Molecules/Navbar.vue:38:56\n36 |                  <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">\n37 |                  <div v-for=\"group in this.$store.state.UserInfo.groups\" :key=\"group.id\" class=\"dropdown-item\">\n38 |                      <div @click=\"getGroupID(group)\">{{ this.$store.state.Group[:key] }} </div>\n   |                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n39 |                  </div>\n40 |                  </div>\n"
+}
