@@ -29,7 +29,9 @@ export default createStore({
                 const response = await axios.get(endpoint);
                 commit('setUserInfo', response.data)
                 commit('setCurrentGroupID', state.UserInfo.groups[0])
+                console.error("getUser");
             } catch(error) {
+                console.error(123);
                 alert(error.response.statusText)
             }
         },
