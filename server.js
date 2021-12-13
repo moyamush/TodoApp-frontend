@@ -7,7 +7,7 @@ app.use(serveStatic(__dirname + "/dist"));
 var port = process.env.PORT || 5050;
 app.listen(port);
 
-app.get('/', (res,) => {
-    res.set({ 'Access-Control-Allow-Origin': 'https://moyamush-todoapp.herokuapp.com/api/user/' }); // ここでヘッダーにアクセス許可の情報を追加
+app.get('https://moyamush-todoapp.herokuapp.com', (res,) => {
+    res.set({ 'Access-Control-Allow-Origin': 'https://moyamush-todoapp-frontend.herokuapp.com' }); // ここでヘッダーにアクセス許可の情報を追加
   });
 console.log('server started '+ port);
