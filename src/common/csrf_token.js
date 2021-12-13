@@ -16,8 +16,9 @@ function getCookie(name) {
     return cookieValue;
 }
 const CSRF_TOKEN = getCookie('csrftoken');
+export default CSRF_TOKEN;
 
-export {
-    CSRF_TOKEN
-};
+// export {
+//     CSRF_TOKEN
+// };
 
