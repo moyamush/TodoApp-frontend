@@ -24,7 +24,7 @@ export default createStore({
     },
     actions: {
         async getCurrentUserInfo({ state, commit }) {
-            const endpoint = "https://moyamush-todoapp.herokuapp.com/api/user/";
+            const endpoint = "https://sk-todoapp.herokuapp.com/api/user/";
             try {
                 const response = await axios.get(endpoint);
                 commit('setUserInfo', response.data)
@@ -37,7 +37,7 @@ export default createStore({
         },
         async getGroupName({ commit }){
             try {
-                const response = await axios.get("https://moyamush-todoapp.herokuapp.com/api/group/");
+                const response = await axios.get("https://sk-todoapp.herokuapp.com/api/group/");
                 commit('setGroupName', response.data.results)
             } catch(error) {
                 alert(error.response.statusText)
@@ -45,7 +45,7 @@ export default createStore({
         },
         async getCurrentGroupTasks({ commit, state }) {
             try {
-                const response = await axios.get("https://moyamush-todoapp.herokuapp.com/api/tasks/");
+                const response = await axios.get("https://sk-todoapp.herokuapp.com/api/tasks/");
                 const grouptasks = [];
                 response.data.results.forEach(element => {
                     if(element.group == state.currentGroupID) {
@@ -58,7 +58,7 @@ export default createStore({
             }
         },
         async getCreateTask({ state }, { newTaskBody, deadline_at }){
-            const endpoint = `https://moyamush-todoapp.herokuapp.com/api/users/${state.UserInfo.id}/task/`;
+            const endpoint = `https://sk-todoapp.herokuapp.com/api/users/${state.UserInfo.id}/task/`;
             try {
                 await axios.post(endpoint, {
                     taskname: newTaskBody,
@@ -77,7 +77,7 @@ export default createStore({
             });
             state.UserInfo.groups.push(group_id);
             console.error("groups: ", state.UserInfo.groups);
-            const endpoint = 'https://moyamush-todoapp.herokuapp.com/api/user/';
+            const endpoint = 'https://sk-todoapp.herokuapp.com/api/user/';
             try {
                 await axios.put(endpoint, 
                     {
@@ -93,7 +93,7 @@ export default createStore({
             }
         },
         async getCreateGroup({dispatch}, { newGroupName }){
-            const endpoint = 'https://moyamush-todoapp.herokuapp.com/api/group/';
+            const endpoint = 'https://sk-todoapp.herokuapp.com/api/group/';
             try {
                 await axios.post(endpoint, {
                      name: newGroupName
@@ -108,7 +108,7 @@ export default createStore({
 
         async joinGroup({state}, { joinGroupID }){
             state.UserInfo.groups.push(joinGroupID);
-            const endpoint = 'https://moyamush-todoapp.herokuapp.com/api/user/';
+            const endpoint = 'https://sk-todoapp.herokuapp.com/api/user/';
             try {
                 await axios.put(endpoint, 
                     {
@@ -124,7 +124,7 @@ export default createStore({
             }
         },
         async deleteTask({state}, {task_id}) {
-            const endpoint = `https://moyamush-todoapp.herokuapp.com/api/tasks/${task_id}/`;
+            const endpoint = `https://sk-todoapp.herokuapp.com/api/tasks/${task_id}/`;
             try {
                 await axios.delete(endpoint);
             } catch (error) {
@@ -133,7 +133,7 @@ export default createStore({
         },
         async editTask({state}, {task_id, taskname, deadline_at}) {
             // delete a given answer from the answers array and make a delete request to the REST API
-            const endpoint = `https://moyamush-todoapp.herokuapp.com/api/tasks/${task_id}/`;
+            const endpoint = `https://sk-todoapp.herokuapp.com/api/tasks/${task_id}/`;
             try {
                 await axios.put(endpoint, {
                     taskname: taskname,

@@ -8,9 +8,9 @@ var port = process.env.PORT || 5050;
 app.listen(port);
 
 console.error(321);
-// app.get('https://moyamush-todoapp.herokuapp.com/api/user/', (req, res) => {
+// app.get('https://sk-todoapp.herokuapp.com/api/user/', (req, res) => {
 //     try {
-// 	    req.setHeader('Access-Control-Allow-Origin', 'https://moyamush-todoapp-frontend.herokuapp.com')
+// 	    req.setHeader('Access-Control-Allow-Origin', 'https://sk-todoapp-frontend.herokuapp.com')
 //         console.error("ok");
 //     } catch (error) {
 //         console.error(error)
