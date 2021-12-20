@@ -76,8 +76,6 @@ const router = createRouter({
 router.beforeEach((to, from, next) => {
   if (to.matched.some((record) => record.meta.requiresAuth)) {
     if (!store.getters.loggedIn) {
-      console.error("login")
-      console.error("key: ", store.state.tokenKey)
       next({
         path: '/login',
         query: {
@@ -88,7 +86,6 @@ router.beforeEach((to, from, next) => {
       next()
     }
   } else {
-    console.error(321321321)
     next()
   }
 })
