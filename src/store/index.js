@@ -134,7 +134,7 @@ export default createStore({
                 alert(error.response.statusText);
             }
         },
-        async getCreateGroup({dispatch}, { newGroupName }){
+        async getCreateGroup({dispatch, state}, { newGroupName }){
             const endpoint = state.BASE_PATH + 'api/group/';
             try {
                 await axios.post(endpoint, {
