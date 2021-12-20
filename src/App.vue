@@ -1,10 +1,11 @@
 <template>
   <div id="app">
-    <h1>test</h1>
     <NavbarComponent />
     <br><br>
     <!-- router-viewでrouter/index.jsに書かれているcomponentを表示できるようにする -->
-    <router-view />
+    <!-- <router-link to="/login" /> -->
+    <!-- <router-link to="/" /> -->
+    <router-view></router-view>
   </div>
 </template>
 

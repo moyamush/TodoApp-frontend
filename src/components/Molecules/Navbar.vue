@@ -35,7 +35,7 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <div v-for="(group, index) in this.$store.state.UserInfo.groups" :key="group.id" class="dropdown-item">
-                        <div @click="getGroupID(group)">ID: {{ group }},{{ this.$store.state.Group[index].name }} </div>
+                        <div @click="getGroupID(group)">ID: {{ group }},{{ this.$store.state.Group[index] }} </div>
                     </div>
                 </div>
             </li>

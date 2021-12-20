@@ -25,7 +25,7 @@ export default {
     },
     components: {
         TaskCard,
-        CreateTask
+        CreateTask,
     },
     methods:{
         openModal: function() {
@@ -36,6 +36,7 @@ export default {
         }
     },
     created() {
+        
         this.$store.dispatch('getCurrentGroupTasks')
     },
 }

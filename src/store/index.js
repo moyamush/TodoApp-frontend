@@ -1,16 +1,28 @@
 import { createStore } from 'vuex'
-
 import { axios } from "@/common/api.service.js";
+
+
 export default createStore({
     state: {
+        LoginInfo: {},
         UserInfo: [],
         currentGroupID: null,
         Group: [],
-        GroupTasks: []
+        GroupTasks: [],
+        BASE_PATH : 'http://127.0.0.1:8000/',
+        tokenKey: ""
+    }, 
+    getters: {
+        loggedIn: (state) => {
+          return Boolean(sessionStorage.getItem("tokenkey"))
+        }
     },
     mutations: {
+        setTokenKey(state, data) {
+            state.tokenKey = data
+        },
         setUserInfo(state, data) {
-        state.UserInfo = data
+            state.UserInfo = data
         },
         setGroupName(state, data) {
             state.Group = data
@@ -23,30 +35,54 @@ export default createStore({
         }
     },
     actions: {
-        async getCurrentUserInfo({ state, commit }) {
-            const endpoint = "https://sk-todoapp.herokuapp.com/api/user/";
+        async login({state, commit, dispatch}, { username, email, password }) {
+            const endpoint = state.BASE_PATH + "api/rest-auth/login/"
+            var token = "";
             try {
-                const response = await axios.get(endpoint);
-                commit('setUserInfo', response.data)
-                commit('setCurrentGroupID', state.UserInfo.groups[0])
-                console.error("getUser");
+                await axios.post(endpoint, {
+                    username: username,
+                    email: email,
+                    password: password
+                }).then(response => (token = response.data["key"]))
+                commit('setTokenKey', token)
+                sessionStorage.setItem('tokenkey', state.tokenKey);
+                await dispatch('getCurrentUserInfo')
+                await dispatch('getGroupName')
             } catch(error) {
-                console.error(123);
                 alert(error.response.statusText)
             }
         },
-        async getGroupName({ commit }){
+        async getCurrentUserInfo({ state, commit }) {
+            const endpoint = state.BASE_PATH + "api/user/";
+            console.error(123);
             try {
-                const response = await axios.get("https://sk-todoapp.herokuapp.com/api/group/");
+                const response = await axios.get(endpoint,{
+                    headers: { Authorization: 'Token ' + sessionStorage.getItem("tokenkey") }
+                });
+                commit('setUserInfo', response.data)
+                commit('setCurrentGroupID', state.UserInfo.groups[0])
+            } catch(error) {
+                alert(error.response.statusText)
+            }
+        },
+        async getGroupName({ state, commit }){
+            const endpoint = state.BASE_PATH + "api/group/"
+            try {
+                const response = await axios.get(endpoint, {
+                    headers: { Authorization: 'Token ' + sessionStorage.getItem("tokenkey") }
+                });
                 commit('setGroupName', response.data.results)
             } catch(error) {
                 alert(error.response.statusText)
             }
         },
         async getCurrentGroupTasks({ commit, state }) {
+            const endpoint = state.BASE_PATH + "api/tasks/"
             try {
-                const response = await axios.get("https://sk-todoapp.herokuapp.com/api/tasks/");
-                const grouptasks = [];
+                const response = await axios.get(endpoint, {
+                    headers: { Authorization: 'Token ' + sessionStorage.getItem("tokenkey") }
+                });
+                var grouptasks = [];
                 response.data.results.forEach(element => {
                     if(element.group == state.currentGroupID) {
                         grouptasks.push(element);
@@ -58,12 +94,15 @@ export default createStore({
             }
         },
         async getCreateTask({ state }, { newTaskBody, deadline_at }){
-            const endpoint = `https://sk-todoapp.herokuapp.com/api/users/${state.UserInfo.id}/task/`;
+            const endpoint = state.BASE_PATH + `api/users/${state.UserInfo.id}/task/`;
             try {
                 await axios.post(endpoint, {
                     taskname: newTaskBody,
                     deadline_at: deadline_at,
                     group: state.currentGroupID
+                },
+                {
+                    headers: { Authorization: 'Token ' + sessionStorage.getItem("tokenkey") }
                 })
             }
             catch(error){
@@ -77,7 +116,7 @@ export default createStore({
             });
             state.UserInfo.groups.push(group_id);
             console.error("groups: ", state.UserInfo.groups);
-            const endpoint = 'https://sk-todoapp.herokuapp.com/api/user/';
+            const endpoint = state.BASE_PATH + 'api/user/';
             try {
                 await axios.put(endpoint, 
                     {
@@ -85,6 +124,9 @@ export default createStore({
                         password: state.UserInfo.password,
                         username: state.UserInfo.username,
                         groups: state.UserInfo.groups
+                    },
+                    {
+                        headers: { Authorization: 'Token ' + sessionStorage.getItem("tokenkey") }
                     }
                 )
             }
@@ -93,10 +135,13 @@ export default createStore({
             }
         },
         async getCreateGroup({dispatch}, { newGroupName }){
-            const endpoint = 'https://sk-todoapp.herokuapp.com/api/group/';
+            const endpoint = state.BASE_PATH + 'api/group/';
             try {
                 await axios.post(endpoint, {
                      name: newGroupName
+                }, 
+                {
+                    headers: { Authorization: 'Token ' + sessionStorage.getItem("tokenkey") }
                 })
                 await dispatch('getGroupName');
                 await dispatch('joinCreatedGroup', {joinGroupName: newGroupName});
@@ -108,7 +153,7 @@ export default createStore({
 
         async joinGroup({state}, { joinGroupID }){
             state.UserInfo.groups.push(joinGroupID);
-            const endpoint = 'https://sk-todoapp.herokuapp.com/api/user/';
+            const endpoint = state.BASE_PATH + 'api/user/';
             try {
                 await axios.put(endpoint, 
                     {
@@ -116,6 +161,9 @@ export default createStore({
                         password: state.UserInfo.password,
                         username: state.UserInfo.username,
                         groups: state.UserInfo.groups
+                    },
+                    {
+                        headers: { Authorization: 'Token ' + sessionStorage.getItem("tokenkey") }
                     }
                 )
             }
@@ -124,21 +172,26 @@ export default createStore({
             }
         },
         async deleteTask({state}, {task_id}) {
-            const endpoint = `https://sk-todoapp.herokuapp.com/api/tasks/${task_id}/`;
+            const endpoint = state.BASE_PATH + `api/tasks/${task_id}/`;
             try {
-                await axios.delete(endpoint);
+                await axios.delete(endpoint, {
+                    headers: { Authorization: 'Token ' + sessionStorage.getItem("tokenkey") }
+                });
             } catch (error) {
                 alert(error.response.statusText);
             }
         },
         async editTask({state}, {task_id, taskname, deadline_at}) {
             // delete a given answer from the answers array and make a delete request to the REST API
-            const endpoint = `https://sk-todoapp.herokuapp.com/api/tasks/${task_id}/`;
+            const endpoint = state.BASE_PATH + `api/tasks/${task_id}/`;
             try {
                 await axios.put(endpoint, {
                     taskname: taskname,
                     deadline_at: deadline_at,
                     group: state.currentGroupID
+                },
+                {
+                    headers: { Authorization: 'Token ' + sessionStorage.getItem("tokenkey") }
                 });
             } catch (error) {
                 alert(error.response.statusText);
