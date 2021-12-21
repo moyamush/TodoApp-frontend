@@ -28,7 +28,7 @@ export default {
       const self = this;
       setTimeout(function(){
         self.$router.push("/");
-      }, 200);
+      }, 500);
     }
   }
 };

@@ -1,6 +1,6 @@
 <template>
   <div class="board">
-    <h2>グループ名: {{ this.$store.state.Group[this.$store.state.currentGroupID - 1] }}</h2>
+    <h2>グループ名: {{ this.$store.state.Group[this.$store.state.currentGroupID - 1]['name'] }}</h2>
     <br>
     <button @click="openModal">create</button>
     <br><br>
