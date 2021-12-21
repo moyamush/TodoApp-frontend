@@ -25,6 +25,10 @@ export default {
         email: this.email,
         password: this.password
       });
+      const self = this;
+      setTimeout(function(){
+        self.$router.push("/");
+      }, 200);
     }
   }
 };

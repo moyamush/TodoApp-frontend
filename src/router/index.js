@@ -14,6 +14,11 @@ import EditTask from '../components/Molecules/EditTask.vue'
 
 const routes = [
   {
+    path: '/login',
+    name: 'Login',
+    component: Login,
+  },
+  {
     // path名 = router-link :to=path名
     path: '/',
     name: 'TaskBoard',
@@ -57,11 +62,6 @@ const routes = [
     meta: { requiresAuth: true }
   },
   {
-    path: '/login',
-    name: 'Login',
-    component: Login,
-  },
-  {
     path: '/*',
     name: "NotFound",
     component: NotFound,
@@ -76,6 +76,7 @@ const router = createRouter({
 router.beforeEach((to, from, next) => {
   if (to.matched.some((record) => record.meta.requiresAuth)) {
     if (!store.getters.loggedIn) {
+      console.error("to: ", to.fullPath);
       next({
         path: '/login',
         query: {
