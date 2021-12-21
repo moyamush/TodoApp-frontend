@@ -4,14 +4,14 @@
     <p>タスク名: {{ task.taskname }}</p>
     <p>作成者: {{ task.user }}</p>
     <p>締め切り: {{ task.deadline_at }}</p>
-    <button @click="openModal">Edit</button>
+    <Button @click="openModal">Edit</Button>
     <EditTask v-show="showContent"
               @from-child="closeModal"
               @edit="this.$store.dispatch('getCurrentGroupTasks')"
               :task_id="task.id"
-              :prev_taskname="task.taskname" />
-    <button @click="deleteTask(task.id)">Delete</button>
-  </div>
+              :prev_taskname="task.taskname" /> 
+    <Button @click="deleteTask(task.id)">Delete</Button>
+  </div>  
 </div>
 </template>
 
@@ -58,13 +58,15 @@ export default {
 }
 .card-skin{
   overflow: hidden;
-  border-radius: 8px;
-  border-left: solid 1px #932993;
-  border-right: solid 3px #932993;
-  border-bottom: solid 3px #932993;
+  border-radius: 15px;
+  border-top: solid 1px black;
+  border-left: solid 1px #884898;
+  border-right: solid 4px #884898;
+  border-bottom: solid 4px #884898;
 }
 
 .card_imgframe {
   padding-top: 1rem;
+  padding-bottom: 0.5rem;
 }
 </style>

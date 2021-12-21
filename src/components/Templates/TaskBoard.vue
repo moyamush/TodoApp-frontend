@@ -1,8 +1,9 @@
 <template>
   <div class="board">
-    <h2>グループ名: {{ this.$store.state.Group[this.$store.state.currentGroupID - 1]['name'] }}</h2>
+    <h2>グループ名: {{ this.$store.state.Group[this.$store.state.currentGroupID - 1].name }}</h2>
+
     <br>
-    <button @click="openModal">create</button>
+    <Button @click="openModal">create</Button>
     <br><br>
     <CreateTask v-show="showContent"
                 @from-child="closeModal"
@@ -14,6 +15,7 @@
 </template>
 
 <script>
+import Button from '../Atoms/Button.vue'
 import TaskCard from '../Molecules/TaskCard.vue'
 import CreateTask from '../Molecules/CreateTask.vue'
 export default {
@@ -24,6 +26,7 @@ export default {
       }
     },
     components: {
+        Button,
         TaskCard,
         CreateTask,
     },
