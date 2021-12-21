@@ -28,7 +28,7 @@ export default {
   margin: 0 10px;
   padding: 0.1rem 1rem 0.1rem 1rem;
   transform: translate(-50%, -50%);
-  border: 4px solid #884898;
+  border: 3px solid #884898;
   letter-spacing: 0.1rem;
   cursor: pointer;
   border-radius: 15px;

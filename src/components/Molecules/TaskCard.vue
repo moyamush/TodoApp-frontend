@@ -61,8 +61,8 @@ export default {
   border-radius: 15px;
   border-top: solid 1px black;
   border-left: solid 1px #884898;
-  border-right: solid 4px #884898;
-  border-bottom: solid 4px #884898;
+  border-right: solid 3px #884898;
+  border-bottom: solid 3px #884898;
 }
 
 .card_imgframe {
