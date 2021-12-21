@@ -25,18 +25,19 @@ export default {
 
 <style scoped>
 .container {
-  margin: 0 10px;
+  margin: 0 6px;
   padding: 0.1rem 1rem 0.1rem 1rem;
   transform: translate(-50%, -50%);
   border: 3px solid #884898;
   letter-spacing: 0.1rem;
   cursor: pointer;
-  border-radius: 15px;
+  border-radius: 10px;
   transition: 0.6s;
 }
 
 .container:hover {
-  box-shadow: 0 1px 30px 0 #884898 inset, 0 1px 10px 0 #884898,
-              0 1px 30px 0 #884898 inset, 0 1px 10px 0 #884898;
+  box-shadow: 0 1px 6px 0 #884898 inset, 0 1px 6px 0 #884898,
+              0 1px 6px 0 #884898 inset, 0 1px 6px 0 #884898;
+  text-shadow: 0 0 1px #884898, 0 0 1px #884898;
 }
 </style>

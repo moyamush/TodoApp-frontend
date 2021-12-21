@@ -9,8 +9,8 @@ export default createStore({
         currentGroupID: null,
         Group: [],
         GroupTasks: [],
-        // BASE_PATH: 'http://127.0.0.1:8000/',
-        BASE_PATH: 'https://sk-todoapp.herokuapp.com/',
+        BASE_PATH: 'http://127.0.0.1:8000/',
+        // BASE_PATH: 'https://sk-todoapp.herokuapp.com/',
         tokenKey: ""
     }, 
     getters: {
