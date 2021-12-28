@@ -10,9 +10,9 @@
         placeholder="グループIDを入力"
         rows="1"
       ></textarea>
-      <Button>
+      <button>
         Join Group
-      </Button>
+      </button>
     </form>
   </div>
 </template>
@@ -31,6 +31,7 @@ export default {
 	},
 	methods: {
 		join_group() {
+      console.error("search")
 			this.$store.dispatch('joinGroup', {joinGroupID: this.joinGroupID})
 		}
 	},

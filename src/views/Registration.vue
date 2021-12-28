@@ -1,46 +1,47 @@
 <template>
-  <div class="login">
+  <div class="registraion">
     <div class="box">
-      <form v-on:submit.prevent="doLogin">
-        <h1>Login</h1>
+      <form v-on:submit.prevent="doRegistration">
+        <h1>Registration </h1>
         <input type="text" placeholder="user name" v-model="username" />
-        <input type="password" placeholder="password" v-model="password" />
-        <input type="submit" value="Login">
+        <input type="email" placeholder="example@todo.com" v-model="email">
+        <input type="password" placeholder="password" v-model="password1" />
+        <input type="password" placeholder="confirm" v-model="password2" />
+        <input type="submit" value="Registation">
       </form>
-      <router-link :to="{ name : 'Registration' }">
-          <div class="createAccount" >Create Account</div>
-      </router-link>
     </div>  
   </div>
 </template>
 <script>
 export default {
-  name: "Login",
+  name: "Registration",
   data() {
     return {
       username: "",
-      password: "",
+      password1: "",
+      password2: "",
       email: ""
     };
   },
   methods: {
-    doLogin() {
-      this.$store.dispatch("login", {
+    doRegistration() {
+      this.$store.dispatch("registration", {
         username: this.username,
         email: this.email,
-        password: this.password
+        password1: this.password1,
+        password2: this.password2
       });
       const self = this;
       setTimeout(function(){
-        self.$router.push("/");
-      }, 1000);
+        self.$router.push("/login");
+      }, 100);
     }
   }
 };
 </script>
 
 <style>
-.login {
+.registraion {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
@@ -48,7 +49,7 @@ export default {
 }
 
 .box {
-  width: 300px;
+  width: 320px;
   padding: 40px 40px 10px;
   position: absolute;
   top: 50%;
@@ -63,7 +64,7 @@ export default {
   /* text-transform: uppercase; */
   font-weight: 500;
 }
-.box input[type="text"], .box input[type="password"] {
+.box input[type="text"], .box input[type="password"], .box input[type="email"] {
   border: 0;
   background: none;
   display: block;
@@ -78,7 +79,7 @@ export default {
   transition: 0.25s;
 }
 
-.box input[type="text"]:focus, .box input[type="password"]:focus {
+.box input[type="text"]:focus, .box input[type="password"]:focus, .box input[type="email"]:focus {
   width: 220px;
   border-color: #2ecc71;
 }
@@ -91,7 +92,7 @@ export default {
   text-align: center;
   border: 2px solid #2ecc71;
   padding: 14px 10px;
-  width: 100px;
+  width: 180px;
   outline: none;
   color: white;
   border-radius: 24px;
@@ -100,27 +101,6 @@ export default {
 }
 
 .box input[type="submit"]:hover {
-  background: #2ecc71;
-}
-
-.createAccount {
-  font-size: 12px;
-  border: 0;
-  background: none;
-  display: block;
-  margin: 60px auto 20px;
-  text-align: center;
-  border: 2px solid #2ecc71;
-  padding: 10px;
-  width: 150px;
-  outline: none;
-  color: white;
-  border-radius: 24px;
-  transition: 0.25s;
-  cursor: pointer;
-}
-
-.createAccount:hover {
   background: #2ecc71;
 }
 </style>

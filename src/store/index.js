@@ -53,6 +53,32 @@ export default createStore({
                 alert(error.response.statusText)
             }
         },
+        async logout({state}) {
+            const endpoint = state.BASE_PATH + "api/rest-auth/logout/"
+            try {
+                await axios.post(endpoint);
+                state.tokenKey = ""
+                state.UserInfo = []
+                sessionStorage.removeItem('tokenkey')
+            } catch(error) {
+                alert(error.response.statusText)
+            }
+        },
+        async registration({state}, { username, email, password1, password2 }) {
+            const endpoint = state.BASE_PATH + "api/rest-auth/registration/"
+            try {
+                await axios.post(endpoint, {
+                    username: username,
+                    email: email,
+                    password1: password1,
+                    password2: password2,
+                });
+                console.error("regi")
+            } catch(error) {
+                console.error(endpoint)
+                alert(error.response.statusText)
+            }
+        },
         async getCurrentUserInfo({ state, commit }) {
             const endpoint = state.BASE_PATH + "api/user/";
             console.error(123);
@@ -62,6 +88,7 @@ export default createStore({
                 });
                 commit('setUserInfo', response.data)
                 commit('setCurrentGroupID', state.UserInfo.groups[0])
+                console.error("getCurrentUserInfo")
             } catch(error) {
                 alert(error.response.statusText)
             }
@@ -111,7 +138,7 @@ export default createStore({
             }
         },
         async joinCreatedGroup({state}, { joinGroupName }){
-            var group_id = "";
+            var group_id = null;
             state.Group.forEach(group => {
                 if(group.name === joinGroupName) group_id = group.id;
             });
@@ -155,20 +182,22 @@ export default createStore({
         async joinGroup({state}, { joinGroupID }){
             state.UserInfo.groups.push(joinGroupID);
             const endpoint = state.BASE_PATH + 'api/user/';
+            console.error("joinGroup")
             try {
                 await axios.put(endpoint, 
-                    {
-                        id: state.UserInfo.id,
-                        password: state.UserInfo.password,
-                        username: state.UserInfo.username,
-                        groups: state.UserInfo.groups
-                    },
-                    {
-                        headers: { Authorization: 'Token ' + sessionStorage.getItem("tokenkey") }
-                    }
-                )
+                {
+                    id: state.UserInfo.id,
+                    password: state.UserInfo.password,
+                    username: state.UserInfo.username,
+                    groups: state.UserInfo.groups
+                },
+                {
+                    headers: { Authorization: 'Token ' + sessionStorage.getItem("tokenkey") }
+                })
+                console.error("join")
             }
             catch(error){
+                console.error("fail")
                 alert(error.response.statusText);
             }
         },

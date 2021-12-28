@@ -12,9 +12,9 @@
         placeholder=""
         rows="1"
       ></textarea>
-      <Button>
+      <button>
         Create Group
-      </Button>
+      </button>
     </form>
   </div>
 </template>
@@ -34,6 +34,7 @@ export default {
 	methods: {
 		  create_join_group() {
 			    this.$store.dispatch('getCreateGroup', {newGroupName: this.newGroupName})
+          console.error("CreateGroup")
 		  }
 	},
 }

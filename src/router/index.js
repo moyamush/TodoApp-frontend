@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import store from '@/store/index.js'
 
 import Login from '../views/Login.vue'
+import Registration from '../views/Registration.vue'
 import TaskBoard from '../components/Templates/TaskBoard.vue'
 import About from '../views/About.vue'
 import MyPage from '../views/MyPage.vue'
@@ -17,6 +18,11 @@ const routes = [
     path: '/login',
     name: 'Login',
     component: Login,
+  },
+  {
+    path: '/registration',
+    name: 'Registration',
+    component: Registration,
   },
   {
     // path名 = router-link :to=path名

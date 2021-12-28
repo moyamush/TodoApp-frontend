@@ -35,13 +35,13 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <div v-for="(group, index) in this.$store.state.UserInfo.groups" :key="group.id" class="dropdown-item">
-                        <div @click="getGroupID(group)">ID: {{ group }},Name: {{ this.$store.state.Group[index].name }} </div>
+                        <div @click="getGroupID(group)">ID: {{ group }},Name: {{ this.$store.state.Group[group-1].name }} </div>
                     </div>
                 </div>
             </li>
-            <!-- <li class="nav-item">
-                <a class="nav-link active" href="/accounts/logout/">Logout</a>
-            </li> -->
+            <li class="nav-item active nav-link">
+                <button @click="logout">Logout</button>
+            </li>
             </ul>
             <!-- <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -68,6 +68,14 @@
             getGroupID(group_id) {
                 this.$store.commit('setCurrentGroupID', group_id)
                 this.$store.dispatch('getCurrentGroupTasks')
+            },
+            logout(){
+                this.$store.dispatch('logout')
+                const self = this;
+                setTimeout(function(){
+                    self.$router.push("/login");
+                }, 1000);
+
             }
         },
         created() {
