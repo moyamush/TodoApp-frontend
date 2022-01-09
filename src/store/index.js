@@ -39,6 +39,8 @@ export default createStore({
         async login({state, commit, dispatch}, { username, email, password }) {
             const endpoint = state.BASE_PATH + "api/rest-auth/login/"
             var token = "";
+            console.error("username: ", username);
+            console.error("password: ", password);
             try {
                 await axios.post(endpoint, {
                     username: username,
